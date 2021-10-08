@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css link : -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="(min-width: 380px) and (max-width: 600px)" href="phone.css">
+    <link rel="stylesheet" media="screen and (max-width: 380px)" href="miniphone.css">
+    <!-- bootstrap css  -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+
+    <!-- W3 Schools Bootstrap : -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- font-awesome icons link (downloaded in pc): -->
+    <link rel="stylesheet" href="/fontawesome/css/all.min.css">
+
+
+    <title>News channel</title>
+</head>
+
+<body>
+    <header>
+        <div class="website-header">
+            <!-- flexbox -->
+            <img src="img/menu.jpg" alt="logo">
+            <h1>NEWS TODAY</h1>
+            <div class="social-icons">
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-linkedin"></i></a>
+                <a href=""><i class="fab fa-youtube"></i></a>
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-telegram"></i></a>
+            </div>
+        </div>
+
+        <!-- Bootstrap collapsing Navbar: -->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- <a class="navbar-brand" href="#">WebSiteName</a> -->
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">National <span
+                                    class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">North Region</a></li>
+                                <li><a href="#">South Region</a></li>
+                                <li><a href="#">Mixed</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">International</a></li>
+                        <li><a href="#">Politics</a></li>
+                        <li><a href="#">Sports</a></li>
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Business</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- breaking news section -->
+        <div class="breaking-news-section">
+            <span id="btext">Breaking news</span>
+            <!-- marquee tag: for continously moving object/text -->
+            <marquee behavior="" direction="left" onmouseover="this.stop()" onmouseout="this.start()">
+                <a href="#" class='breaking-news'>
+                    <p class="bntime">27 july 2021</p>
+                    Congress under pressure to reach a deal
+                </a>
+                <a href="#" class='breaking-news'>
+                    <p class="bntime">28 july 2021</p>
+                    Congrese to re Lorem ipsum dolor sit. ach a deal
+                </a>
+                <a href="#" class='breaking-news'>
+                    <p class="bntime">29 july 2021</p>
+                    Lorem ipsum dolor, sit amet consecteturlat!!
+                </a>
+            </marquee>
+        </div>
+    </header>
+    <main>
+        <article id="popular-news">
+            <div id="featured">
+                <h2>FEATURED NEWS</h2>
+
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="/news project/img/carousel1.jpg" alt="featured-1">
+                            <div class="carousel-caption">
+                                <h3>Caption-1</h3>
+                                <p>LA is always so much fun!</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="/news project/img/carousel2.jpg" alt="featured-2">
+                            <div class="carousel-caption">
+                                <h3>caption2</h3>
+                                <p>Lorem ipsum dolor sit amet. ays so much fun!</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="/news project/img/carousel3.jpg" alt="featured-3S">
+                            <div class="carousel-caption">
+                                <h3>caption-3</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div id="latest">
+                <h2>LATEST NEWS</h2>
+                <section class="news">
+                    <div class="news-container">
+                        <img src="/news project/img/carousel1.jpg" alt="latestNews-1">
+                        <p class="popular-news-text">Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </section>
+                <section class="news">
+                    <div class="news-container">
+                        <img src="/news project/img/carousel2.jpg" alt="latestNews-2">
+                        <p class="popular-news-text">Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </section>
+            </div>
+            <div id="our-picks">
+                <h2>OUR-PICKS</h2>
+                <section class="news">
+                    <div class="news-container">
+                        <img src="/news project/img/carousel3.jpg" alt="ourPicks-1">
+                        <p class="popular-news-text">Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </section>
+                <section class="news">
+                    <div class="news-container">
+                        <img src="/news project/img/carousel1.jpg" alt="ourPicks-2">
+                        <p class="popular-news-text">Lorem, ipsum dolor sit amet consectetur .</p>
+                    </div>
+                </section>
+            </div>
+        </article>
+        <section class="more-news">
+            <div class="news-section">
+                <div class="world">
+                    <h2>WORLD NEWS</h2>
+                    <img src="/news project/img/world1.jpg" alt="world-news">
+                    <h3>World news title:Lorem ipsum dolor sit.</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetutatum, ullam. Cumque neque odio suscipit expedita non quam
+                        magnam nobis assumenda.</p>
+                </div>
+
+                <div class="sports">
+                    <h2>SPORTS NEWS</h2>
+                    <img src="/news project/img/sport1.jpg" alt="sports-news">
+                    <h3>Sports title :Lorem ipsum dolor sit.</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetutatum, ullam. Cumque neque odio suscipit expedita non quam
+                        magnam nobis assumenda.</p>
+                </div>
+            </div>
+            <aside>
+                <h2>RECENT NEWS</h2>
+                <div class="recent-news">
+                    <img src="img/article1.jpg" alt="">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="recent-news">
+                    <img src="img/aside3.jpg" alt="">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="recent-news">
+                    <img src="img/aside4.jpg" alt="">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="recent-news">
+                    <img src="img/aside5.jpg" alt="">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="recent-news">
+                    <img src="img/aside4.jpg" alt="">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+            </aside>
+        </section>
+    </main>
+    <footer>
+        <div class="social-links">
+            <section class="about">
+                <h2>About</h2>
+                <p>Lorem ipsum dolor sit amet . Lorem ipsum dolor sit amdolor iusto voluptatum nemo! Veniam ipsa culpa
+                    eius praesentium dignissimos consequuntur? Voluptatem, sit! Vitae porro sunt ratione totam dolores?
+                </p>
+                <br><br>
+                <div class="social-icons-footer">
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-telegram"></i></a>
+
+                </div>
+            </section>
+            <section class="instagram">
+                <h2>Instagram</h2>
+
+                <img src="img/article1.jpg" alt="">
+                <img src="img/aside3.jpg" alt="">
+                <img src="img/aside4.jpg" alt="">
+                <img src="img/aside5.jpg" alt="">
+                <img src="img/carousel2.jpg" alt="">
+                <img src="img/carousel1.jpg" alt="">
+                <img src="img/carousel3.jpg" alt="">
+                <img src="img/world1.jpg" alt="">
+                <img src="img/sport1.jpg" alt="">
+                <button type="button" class="footer-button">View Instagram</button>
+
+            </section>
+            <section class="subscribe">
+                <h2>Subscribe to News Today</h2>
+                <p> Enter your email address to subscribe to this blog and receive notification of the new posts : </p>
+                <input type="email" placeholder="enter your email" name="email-info">
+                <button type="button" class="footer-button">Subscribe</button>
+            </section>
+        </div>
+        <div class="copywright">Copywright ©️ 2021 News Today</div>
+    </footer>
+
+    <!-- js link :: -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+     -->
+</body>
+
+</html>
